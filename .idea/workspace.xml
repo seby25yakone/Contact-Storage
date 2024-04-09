@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="created contact cell factory class">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="made the mainmenu load the contact list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <workItem from="1712595742087" duration="73000" />
       <workItem from="1712595824805" duration="209000" />
       <workItem from="1712596044113" duration="2230000" />
-      <workItem from="1712677092845" duration="1547000" />
+      <workItem from="1712677092845" duration="2566000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -96,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712598237533</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="made the mainmenu load the contact list">
+      <option name="closed" value="true" />
+      <created>1712678765876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712678765876</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created list scene, contact class" />
     <MESSAGE value="created contact cell factory class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created contact cell factory class" />
+    <MESSAGE value="made the mainmenu load the contact list" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the mainmenu load the contact list" />
   </component>
 </project>

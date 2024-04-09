@@ -12,7 +12,7 @@
             <HBox alignment="CENTER_LEFT" prefHeight="180.0" prefWidth="402.0" spacing="20.0">
                <children>
                   <Label text="Name" />
-                  <TextField alignment="CENTER" editable="false" />
+                  <TextField fx:id="nameTextField" alignment="CENTER" editable="false" />
                </children>
                <padding>
                   <Insets left="20.0" />
@@ -21,7 +21,7 @@
             <HBox alignment="CENTER_LEFT" prefHeight="189.0" prefWidth="402.0" spacing="20.0">
                <children>
                   <Label text="Phone number" />
-                  <TextField alignment="CENTER" editable="false" />
+                  <TextField fx:id="phoneTextField" alignment="CENTER" editable="false" />
                </children>
                <VBox.margin>
                   <Insets />
@@ -35,7 +35,7 @@
                </padding>
                <children>
                   <Label text="Email" />
-                  <TextField alignment="CENTER" editable="false" />
+                  <TextField fx:id="emailTextField" alignment="CENTER" editable="false" />
                </children></HBox>
          </children>
       </VBox>
