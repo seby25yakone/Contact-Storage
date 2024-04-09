@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="created add contact screen">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="made window unresizable to avoid unnecessary aesthetic issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +81,7 @@
       <workItem from="1712595742087" duration="73000" />
       <workItem from="1712595824805" duration="209000" />
       <workItem from="1712596044113" duration="2230000" />
-      <workItem from="1712677092845" duration="5156000" />
+      <workItem from="1712677092845" duration="10899000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -129,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712682297211</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="made window unresizable to avoid unnecessary aesthetic issues">
+      <option name="closed" value="true" />
+      <created>1712682687905</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712682687905</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +152,7 @@
     <MESSAGE value="added the functionality to display contact details" />
     <MESSAGE value="added display contact details and delete contact functionality" />
     <MESSAGE value="created add contact screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="created add contact screen" />
+    <MESSAGE value="made window unresizable to avoid unnecessary aesthetic issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="made window unresizable to avoid unnecessary aesthetic issues" />
   </component>
 </project>

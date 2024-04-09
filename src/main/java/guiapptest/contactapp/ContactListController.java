@@ -2,6 +2,9 @@ package guiapptest.contactapp;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -16,6 +19,8 @@ public class ContactListController implements Initializable {
     @FXML
     private ListView<Contact> contactListView;
 
+    private ObservableList<Contact> contactList = FXCollections.observableArrayList();
+
     @FXML
     private TextField nameTextField;
 
@@ -26,11 +31,9 @@ public class ContactListController implements Initializable {
     private TextField emailTextField;
 
     private Contact currentContact;
-
-    Contact c1 = new Contact("Tudor", "292839","tudi23@gmail.com");
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        contactListView.getItems().add(c1);
+        contactListView.setItems(contactList);
         contactListView.setCellFactory(new Callback<ListView<Contact>, ListCell<Contact>>() {
             @Override
             public ListCell<Contact> call(ListView<Contact> contactListView) {
@@ -66,8 +69,14 @@ public class ContactListController implements Initializable {
         }
     }
 
-    public void addListContact(Contact c){
-        contactListView.getItems().add(c);
+    protected void repopulateList(ObservableList<Contact> list){
+        contactListView.setItems(list);
+    }
+
+    protected void addListContact(Contact c){
+        contactList.add(c);
+        System.out.println(contactList);
+        repopulateList(contactList);
     }
 
 }

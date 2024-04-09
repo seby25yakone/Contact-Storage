@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" prefHeight="413.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiapptest.contactapp.AddContactController">
    <children>
       <HBox alignment="CENTER" prefHeight="125.0" prefWidth="600.0">
          <children>
@@ -34,6 +34,7 @@
             <TextField fx:id="emailTextField" />
          </children>
       </HBox>
-      <Button mnemonicParsing="false" text="Save contact" />
+      <Label fx:id="savedMessage" alignment="CENTER" contentDisplay="CENTER" minWidth="-Infinity" prefHeight="18.0" prefWidth="265.0" textFill="#00ff3d" />
+      <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveContact" text="Save contact" />
    </children>
 </VBox>
