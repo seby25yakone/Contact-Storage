@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="125.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" text="Name">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="nameTextField" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="132.0" prefWidth="600.0">
+         <children>
+            <Label text="Phone number">
+               <HBox.margin>
+                  <Insets left="-45.0" right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="phoneTextField" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label text="Email">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="emailTextField" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" text="Save contact" />
+   </children>
+</VBox>

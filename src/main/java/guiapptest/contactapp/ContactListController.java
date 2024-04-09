@@ -65,4 +65,9 @@ public class ContactListController implements Initializable {
             alert.close();
         }
     }
+
+    public void addListContact(Contact c){
+        contactListView.getItems().add(c);
+    }
+
 }

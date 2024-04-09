@@ -11,7 +11,10 @@
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="180.0" prefWidth="402.0" spacing="20.0">
                <children>
-                  <Label text="Name" />
+                  <Label text="Name">
+                     <HBox.margin>
+                        <Insets right="45.0" />
+                     </HBox.margin></Label>
                   <TextField fx:id="nameTextField" alignment="CENTER" editable="false" />
                </children>
                <padding>
@@ -20,7 +23,10 @@
             </HBox>
             <HBox alignment="CENTER_LEFT" prefHeight="189.0" prefWidth="402.0" spacing="20.0">
                <children>
-                  <Label text="Phone number" />
+                  <Label text="Phone number">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
                   <TextField fx:id="phoneTextField" alignment="CENTER" editable="false" />
                </children>
                <VBox.margin>
@@ -34,7 +40,10 @@
                   <Insets left="20.0" />
                </padding>
                <children>
-                  <Label text="Email" />
+                  <Label text="Email">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin></Label>
                   <TextField fx:id="emailTextField" alignment="CENTER" editable="false" />
                   <Button alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#deleteContact" text="Delete contact" />
                </children></HBox>

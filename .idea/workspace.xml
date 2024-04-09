@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added the functionality to display contact details">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added display contact details and delete contact functionality">
+      <change afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" afterDir="false" />
@@ -78,7 +80,7 @@
       <workItem from="1712595742087" duration="73000" />
       <workItem from="1712595824805" duration="209000" />
       <workItem from="1712596044113" duration="2230000" />
-      <workItem from="1712677092845" duration="3246000" />
+      <workItem from="1712677092845" duration="4623000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -112,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712679724445</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added display contact details and delete contact functionality">
+      <option name="closed" value="true" />
+      <created>1712680447021</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712680447021</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +133,7 @@
     <MESSAGE value="created contact cell factory class" />
     <MESSAGE value="made the mainmenu load the contact list" />
     <MESSAGE value="added the functionality to display contact details" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the functionality to display contact details" />
+    <MESSAGE value="added display contact details and delete contact functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="added display contact details and delete contact functionality" />
   </component>
 </project>
