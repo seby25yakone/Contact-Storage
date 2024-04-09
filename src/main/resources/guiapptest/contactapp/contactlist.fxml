@@ -36,6 +36,7 @@
                <children>
                   <Label text="Email" />
                   <TextField fx:id="emailTextField" alignment="CENTER" editable="false" />
+                  <Button alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#deleteContact" text="Delete contact" />
                </children></HBox>
          </children>
       </VBox>

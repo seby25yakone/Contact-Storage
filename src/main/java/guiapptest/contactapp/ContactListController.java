@@ -4,13 +4,12 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
 
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class ContactListController implements Initializable {
@@ -42,11 +41,28 @@ public class ContactListController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends Contact> observableValue, Contact contact, Contact t1) {
                 currentContact = contactListView.getSelectionModel().getSelectedItem();
-                nameTextField.setText(currentContact.getName());
-                phoneTextField.setText(currentContact.getPhoneNumber());
-                emailTextField.setText(currentContact.getEmail());
+                if(currentContact!=null){
+                    nameTextField.setText(currentContact.getName());
+                    phoneTextField.setText(currentContact.getPhoneNumber());
+                    emailTextField.setText(currentContact.getEmail());
+                }
+
             }
         });
     }
-
+    public void deleteContact(){
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Delete contact");
+        alert.setHeaderText("Are you sure you want to delete this contact?");
+        alert.setContentText("This action cannot be undone!");
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK){
+            contactListView.getItems().remove(contactListView.getSelectionModel().getSelectedItem());
+            nameTextField.clear();
+            phoneTextField.clear();
+            emailTextField.clear();
+        } else {
+            alert.close();
+        }
+    }
 }
