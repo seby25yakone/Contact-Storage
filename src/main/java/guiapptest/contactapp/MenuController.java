@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.net.URL;
@@ -19,6 +20,11 @@ public class MenuController {
 
     public void openContactList() throws IOException {
         HBox view = FXMLLoader.load(getClass().getResource("contactlist.fxml"));
+        borderPane.setCenter(view);
+    }
+
+    public void openAddContact() throws IOException{
+        VBox view = FXMLLoader.load(getClass().getResource("addcontact.fxml"));
         borderPane.setCenter(view);
     }
 
