@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContactDataSource {
-    private static final String url = "jdbc:mysql://localhost:8888/contacts";
+    private static final String url = "jdbc:mysql://localhost:3306/contacts";
     private static final String username = "admin";
     private static final String password = "admin";
 
@@ -52,14 +52,12 @@ public class ContactDataSource {
         return contacts;
     }
         public static void deleteContact(Contact contact){
-        String query= "DELETE FROM contacts WHERE name='?',phone_number='?',email='?'";
+        String query= "DELETE FROM contacts WHERE phone_number=?";
         try (
                 Connection connection = DriverManager.getConnection(url, username, password);
                 PreparedStatement statement = connection.prepareStatement(query);
         ) {
-            statement.setString(1, contact.getName());
-            statement.setString(2, contact.getPhoneNumber());
-            statement.setString(3, contact.getEmail());
+            statement.setString(1, contact.getPhoneNumber());
 
             statement.executeUpdate();
             statement.close();
