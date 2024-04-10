@@ -22,23 +22,23 @@ public class AddContactController {
     @FXML
     private Button saveButton;
 
+    private ContactRepository contactRepository;
+
+    public AddContactController(){}
+    public AddContactController(ContactRepository contactRepository){
+        this.contactRepository = contactRepository;
+    }
+
     @FXML
     public void saveContact(ActionEvent event){
-        if(nameTextField.getText().isBlank()){
-            savedMessage.setText("Contact must contain at least a name!");
+        if(nameTextField.getText().isBlank() || phoneTextField.getText().isBlank()){
+            savedMessage.setText("Contact must contain at least a name and phone number!");
         } else {
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
-                Parent root = loader.load();
-                ContactListController clc = loader.getController();
-                clc.addListContact(new Contact(nameTextField.getText(), phoneTextField.getText(), emailTextField.getText()));
-                savedMessage.setText("Contact saved!");
-                nameTextField.clear();
-                phoneTextField.clear();
-                emailTextField.clear();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            contactRepository.addContact(new Contact(nameTextField.getText(), phoneTextField.getText(), emailTextField.getText()));
+            savedMessage.setText("Contact saved!");
+            nameTextField.clear();
+            phoneTextField.clear();
+            emailTextField.clear();
         }
     }
 

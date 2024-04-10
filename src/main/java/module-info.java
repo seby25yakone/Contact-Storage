@@ -4,6 +4,7 @@ module guiapptest.contactapp {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires java.sql;
 
     opens guiapptest.contactapp to javafx.fxml;
     exports guiapptest.contactapp;
