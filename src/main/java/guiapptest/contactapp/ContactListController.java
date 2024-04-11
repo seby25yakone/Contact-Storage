@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
 
@@ -19,6 +20,8 @@ import java.util.ResourceBundle;
 
 public class ContactListController implements Initializable {
     private ContactRepository contactRepository;
+    @FXML
+    private HBox hBox;
     @FXML
     private ListView<Contact> contactListView;
 
@@ -87,6 +90,11 @@ public class ContactListController implements Initializable {
 
     protected void addListContact(Contact c){
         contactRepository.addContact(c);
+    }
+
+    public void setAquaTheme(){
+        hBox.getStylesheets().clear();
+        hBox.getStylesheets().add(getClass().getResource("/styles/AquaTheme.css").toExternalForm());
     }
 
 }

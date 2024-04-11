@@ -7,10 +7,13 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
 public class AddContactController {
+    @FXML
+    private VBox vBox;
     @FXML
     private TextField nameTextField;
     @FXML
@@ -40,6 +43,11 @@ public class AddContactController {
             phoneTextField.clear();
             emailTextField.clear();
         }
+    }
+
+    public void setAquaTheme(){
+        vBox.getStylesheets().clear();
+        vBox.getStylesheets().add(getClass().getResource("/styles/AquaTheme.css").toExternalForm());
     }
 
 }
