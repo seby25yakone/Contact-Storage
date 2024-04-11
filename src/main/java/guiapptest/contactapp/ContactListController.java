@@ -70,15 +70,18 @@ public class ContactListController implements Initializable {
         alert.setTitle("Delete contact");
         alert.setHeaderText("Are you sure you want to delete this contact?");
         alert.setContentText("This action cannot be undone!");
-        Optional<ButtonType> result = alert.showAndWait();
-        if (result.get() == ButtonType.OK){
-            contactRepository.deleteContact(contactListView.getSelectionModel().getSelectedItem());
-            contactListView.refresh();
-            nameTextField.clear();
-            phoneTextField.clear();
-            emailTextField.clear();
-        } else {
-            alert.close();
+        if(contactListView.getSelectionModel().getSelectedItem()!=null) {
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK) {
+
+                contactRepository.deleteContact(contactListView.getSelectionModel().getSelectedItem());
+                contactListView.refresh();
+                nameTextField.clear();
+                phoneTextField.clear();
+                emailTextField.clear();
+            } else {
+                alert.close();
+            }
         }
     }
 

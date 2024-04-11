@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added an icon to the app">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/AppStyle.css" afterDir="false" />
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="created first app theme">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/GalaxyTheme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/AppStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/AquaTheme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
@@ -88,7 +91,7 @@
       <workItem from="1712677092845" duration="10934000" />
       <workItem from="1712755711975" duration="3193000" />
       <workItem from="1712758936229" duration="7660000" />
-      <workItem from="1712847071837" duration="2774000" />
+      <workItem from="1712847071837" duration="5824000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -186,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712848010519</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="created first app theme">
+      <option name="closed" value="true" />
+      <created>1712850527734</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712850527734</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +216,8 @@
     <MESSAGE value="(FINALLY) got databases to work" />
     <MESSAGE value="fixed adding multiple instances of contact bug" />
     <MESSAGE value="added an icon to the app" />
-    <option name="LAST_COMMIT_MESSAGE" value="added an icon to the app" />
+    <MESSAGE value="created first app theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="created first app theme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

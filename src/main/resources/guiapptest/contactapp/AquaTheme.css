@@ -5,6 +5,8 @@
 .button {
     -fx-background-color: #00c9bc;
     -fx-border-color: #00949e;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;
     -fx-border-width: 2px;
     -fx-font-family: Constantia;
     -fx-font-size: 12px;
@@ -28,8 +30,17 @@
 .label {
     -fx-font-family: Constantia;
     -fx-font-size: 12px;
+    -fx-text-fill: white;
 }
 
 .list-view .list-cell{
     -fx-font-family: Constantia;
+}
+
+.menu-button {
+    -fx-background-color: #00c9bc;
+}
+
+.menu-item {
+    -fx-background-color: #82ffd1;
 }

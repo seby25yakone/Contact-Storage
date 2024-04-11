@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -18,6 +20,12 @@ public class MenuController implements Initializable {
     private BorderPane borderPane;
     @FXML
     private Button contactListButton;
+    @FXML
+    private MenuButton themeSelector;
+    @FXML
+    private MenuItem aquaTheme;
+    @FXML
+    private MenuItem galaxyTheme;
     private ContactRepository repository;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
