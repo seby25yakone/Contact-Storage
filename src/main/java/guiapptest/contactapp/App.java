@@ -14,7 +14,7 @@ public class App extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("mainmenu.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
-        stage.setTitle("Hello!");
+        stage.setTitle("Contact Storage");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

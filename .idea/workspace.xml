@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added database functionality but the app freezes whenever performing an operation">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="(FINALLY) got databases to work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MemoryContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MemoryContactRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,8 @@
       <workItem from="1712596044113" duration="2230000" />
       <workItem from="1712677092845" duration="10934000" />
       <workItem from="1712755711975" duration="3193000" />
-      <workItem from="1712758936229" duration="7407000" />
+      <workItem from="1712758936229" duration="7660000" />
+      <workItem from="1712847071837" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -156,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712764829287</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="(FINALLY) got databases to work">
+      <option name="closed" value="true" />
+      <created>1712767533218</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712767533218</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +182,8 @@
     <MESSAGE value="made window unresizable to avoid unnecessary aesthetic issues" />
     <MESSAGE value="attempted to add save contact functionality" />
     <MESSAGE value="added database functionality but the app freezes whenever performing an operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added database functionality but the app freezes whenever performing an operation" />
+    <MESSAGE value="(FINALLY) got databases to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="(FINALLY) got databases to work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

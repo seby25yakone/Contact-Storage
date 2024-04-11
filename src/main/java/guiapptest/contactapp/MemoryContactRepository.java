@@ -14,8 +14,7 @@ public class MemoryContactRepository implements ContactRepository<Contact>{
         contacts.add(contact);
     }
     public List<Contact> getAllContacts(){
-        for(Contact contact : ContactDataSource.findAll())
-            contacts.add(contact);
+        contacts = ContactDataSource.findAll();
         return contacts;
     }
     public void deleteContact(Contact contact){
