@@ -1,5 +1,6 @@
 package guiapptest.contactapp;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -19,6 +20,8 @@ public class MenuController implements Initializable {
     @FXML
     private BorderPane borderPane;
     @FXML
+    private Button createContactButton;
+    @FXML
     private Button contactListButton;
     @FXML
     private MenuButton themeSelector;
@@ -31,7 +34,7 @@ public class MenuController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         repository = new MemoryContactRepository();
     }
-    public void openContactList() throws IOException {
+    public void openContactList(ActionEvent event) throws IOException {
         FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
         listLoader.setControllerFactory(controllerClass -> new ContactListController(repository));
         HBox view = listLoader.load();
@@ -39,12 +42,42 @@ public class MenuController implements Initializable {
         borderPane.setCenter(view);
     }
 
-    public void openAddContact() throws IOException{
+    public void openAddContact(ActionEvent event) throws IOException{
         FXMLLoader addLoader= new FXMLLoader(getClass().getResource("addcontact.fxml"));
         addLoader.setControllerFactory(controllerClass -> new AddContactController(repository));
         VBox view = addLoader.load();
         AddContactController addContactController = new AddContactController(repository);
         borderPane.setCenter(view);
+    }
+
+    public void setAquaTheme(ActionEvent event) throws IOException {
+        borderPane.getStylesheets().clear();
+        borderPane.getStylesheets().add(getClass().getResource("/styles/AquaTheme.css").toExternalForm());
+        FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
+        listLoader.setControllerFactory(controllerClass -> new ContactListController(repository));
+        HBox listView = listLoader.load();
+        listView.getStylesheets().clear();
+        listView.getStylesheets().add(getClass().getResource("/styles/AquaTheme.css").toExternalForm());
+        FXMLLoader addLoader = new FXMLLoader(getClass().getResource("addcontact.fxml"));
+        addLoader.setControllerFactory(controllerClass -> new AddContactController(repository));
+        VBox addView = addLoader.load();
+        addView.getStylesheets().clear();
+        addView.getStylesheets().add(getClass().getResource("/styles/AquaTheme.css").toExternalForm());
+    }
+
+    public void setGalaxyTheme(ActionEvent event) throws IOException{
+        borderPane.getStylesheets().clear();
+        borderPane.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
+        FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
+        listLoader.setControllerFactory(controllerClass -> new ContactListController(repository));
+        HBox listView = listLoader.load();
+        listView.getStylesheets().clear();
+        listView.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
+        FXMLLoader addLoader = new FXMLLoader(getClass().getResource("addcontact.fxml"));
+        addLoader.setControllerFactory(controllerClass -> new AddContactController(repository));
+        VBox addView = addLoader.load();
+        addView.getStylesheets().clear();
+        addView.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
     }
 
 
