@@ -97,4 +97,9 @@ public class ContactListController implements Initializable {
         hBox.getStylesheets().add(getClass().getResource("/styles/AquaTheme.css").toExternalForm());
     }
 
+    public void setGalaxyTheme(){
+        hBox.getStylesheets().clear();
+        hBox.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
+    }
+
 }

@@ -72,16 +72,14 @@ public class MenuController implements Initializable {
         borderPane.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
         FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
         listLoader.setControllerFactory(controllerClass -> new ContactListController(repository));
-        HBox listView = listLoader.load();
-        listView.getStylesheets().clear();
-        listView.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
+        Parent root1 = listLoader.load();
+        ContactListController listView = listLoader.getController();
+        listView.setGalaxyTheme();
         FXMLLoader addLoader = new FXMLLoader(getClass().getResource("addcontact.fxml"));
         addLoader.setControllerFactory(controllerClass -> new AddContactController(repository));
-        VBox addView = addLoader.load();
-        addView.getStylesheets().clear();
-        addView.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
-        ((Parent) listLoader.getRoot()).getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
-        ((Parent) addLoader.getRoot()).getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
+        Parent root2 = addLoader.load();
+        AddContactController addView = addLoader.getController();
+        addView.setGalaxyTheme();
     }
 
 

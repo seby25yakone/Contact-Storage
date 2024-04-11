@@ -50,4 +50,9 @@ public class AddContactController {
         vBox.getStylesheets().add(getClass().getResource("/styles/AquaTheme.css").toExternalForm());
     }
 
+    public void setGalaxyTheme(){
+        vBox.getStylesheets().clear();
+        vBox.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
+    }
+
 }
