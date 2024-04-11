@@ -1,0 +1,35 @@
+.root {
+    -fx-background-color: #91ffde;
+}
+
+.button {
+    -fx-background-color: #00c9bc;
+    -fx-border-color: #00949e;
+    -fx-border-width: 2px;
+    -fx-font-family: Constantia;
+    -fx-font-size: 12px;
+}
+
+.text-field {
+    -fx-background-color: #c4ffed;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #82ffd1;
+}
+.list-view .list-cell:odd {
+    -fx-background-color: #b3ffe4;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #00d696;
+}
+
+.label {
+    -fx-font-family: Constantia;
+    -fx-font-size: 12px;
+}
+
+.list-view .list-cell{
+    -fx-font-family: Constantia;
+}

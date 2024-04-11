@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="fixed adding multiple instances of contact bug">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added an icon to the app">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/AppStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -49,7 +53,8 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/java/GUITest",
+    "last_opened_file_path": "C:/java/GUI Flow Test",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,7 +88,7 @@
       <workItem from="1712677092845" duration="10934000" />
       <workItem from="1712755711975" duration="3193000" />
       <workItem from="1712758936229" duration="7660000" />
-      <workItem from="1712847071837" duration="797000" />
+      <workItem from="1712847071837" duration="2774000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -173,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712847215534</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added an icon to the app">
+      <option name="closed" value="true" />
+      <created>1712848010519</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712848010519</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +204,8 @@
     <MESSAGE value="added database functionality but the app freezes whenever performing an operation" />
     <MESSAGE value="(FINALLY) got databases to work" />
     <MESSAGE value="fixed adding multiple instances of contact bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed adding multiple instances of contact bug" />
+    <MESSAGE value="added an icon to the app" />
+    <option name="LAST_COMMIT_MESSAGE" value="added an icon to the app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
