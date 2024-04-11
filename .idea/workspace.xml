@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added theme selection functionality">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="attempted to fix theme selection bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/addcontact.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/AquaTheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/AquaTheme.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,28 +44,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/java/ContactApp/src/main/resources/styles",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/java/ContactApp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\java\ContactApp\src\main\resources\styles" />
@@ -94,7 +93,10 @@
       <workItem from="1712677092845" duration="10934000" />
       <workItem from="1712755711975" duration="3193000" />
       <workItem from="1712758936229" duration="7660000" />
-      <workItem from="1712847071837" duration="9211000" />
+      <workItem from="1712847071837" duration="9876000" />
+      <workItem from="1712857933619" duration="42000" />
+      <workItem from="1712858018099" duration="3000" />
+      <workItem from="1712870117405" duration="574000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -216,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712854761541</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="attempted to fix theme selection bug">
+      <option name="closed" value="true" />
+      <created>1712856978463</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712856978463</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +248,8 @@
     <MESSAGE value="created first app theme" />
     <MESSAGE value="created two app themes" />
     <MESSAGE value="added theme selection functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added theme selection functionality" />
+    <MESSAGE value="attempted to fix theme selection bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempted to fix theme selection bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
