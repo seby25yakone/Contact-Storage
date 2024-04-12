@@ -14,7 +14,7 @@
 }
 
 .text-field {
-    -fx-background-color: #33224f;
+    -fx-background-color: linear-gradient(to bottom, #4a0087, #9c0091);
     -fx-text-fill: white;
 }
 

@@ -6,6 +6,10 @@
     -fx-control-inner-background-alt: -fx-control-inner-background ;
 }
 
+.list-view .list-cell:even {
+    -fx-background-color: derive(-fx-base, 50%);
+}
+
 .separator *.line {
     -fx-background-color: #3C3C3C;
     -fx-border-style: solid;
