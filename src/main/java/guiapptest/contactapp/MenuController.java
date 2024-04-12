@@ -27,6 +27,10 @@ public class MenuController implements Initializable {
     @FXML
     private MenuButton themeSelector;
     @FXML
+    private MenuItem defaultLight;
+    @FXML
+    private MenuItem darkTheme;
+    @FXML
     private MenuItem aquaTheme;
     @FXML
     private MenuItem galaxyTheme;
@@ -49,6 +53,21 @@ public class MenuController implements Initializable {
         VBox view = addLoader.load();
         AddContactController addContactController = new AddContactController(repository);
         borderPane.setCenter(view);
+    }
+
+    public void setDefaultLightTheme(ActionEvent event) throws IOException {
+        borderPane.getStylesheets().clear();
+        FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
+        listLoader.setControllerFactory(controllerClass -> new ContactListController(repository));
+        Parent root1 = listLoader.load();
+        ContactListController listView = listLoader.getController();
+        listView.setDefaultLightTheme();
+        FXMLLoader addLoader = new FXMLLoader(getClass().getResource("addcontact.fxml"));
+        addLoader.setControllerFactory(controllerClass -> new AddContactController(repository));
+        Parent root2 = addLoader.load();
+        AddContactController addView = addLoader.getController();
+        addView.setDefaultLightTheme();
+
     }
 
     public void setAquaTheme(ActionEvent event) throws IOException {
@@ -82,5 +101,20 @@ public class MenuController implements Initializable {
         addView.setGalaxyTheme();
     }
 
+    public void setDarkTheme(ActionEvent event) throws IOException {
+        borderPane.getStylesheets().clear();
+        borderPane.getStylesheets().add(getClass().getResource("/styles/DarkTheme.css").toExternalForm());
+        FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
+        listLoader.setControllerFactory(controllerClass -> new ContactListController(repository));
+        Parent root1 = listLoader.load();
+        ContactListController listView = listLoader.getController();
+        listView.setDarkTheme();
+        FXMLLoader addLoader = new FXMLLoader(getClass().getResource("addcontact.fxml"));
+        addLoader.setControllerFactory(controllerClass -> new AddContactController(repository));
+        Parent root2 = addLoader.load();
+        AddContactController addView = addLoader.getController();
+        addView.setDarkTheme();
+
+    }
 
 }

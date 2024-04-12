@@ -55,4 +55,14 @@ public class AddContactController {
         vBox.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
     }
 
+    public void setDefaultLightTheme()
+    {
+        vBox.getStylesheets().clear();
+    }
+
+    public void setDarkTheme(){
+        vBox.getStylesheets().clear();
+        vBox.getStylesheets().add(getClass().getResource("/styles/DarkTheme.css").toExternalForm());
+    }
+
 }

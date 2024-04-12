@@ -102,4 +102,14 @@ public class ContactListController implements Initializable {
         hBox.getStylesheets().add(getClass().getResource("/styles/GalaxyTheme.css").toExternalForm());
     }
 
+    public void setDefaultLightTheme()
+    {
+        hBox.getStylesheets().clear();
+    }
+
+    public void setDarkTheme(){
+        hBox.getStylesheets().clear();
+        hBox.getStylesheets().add(getClass().getResource("/styles/DarkTheme.css").toExternalForm());
+    }
+
 }

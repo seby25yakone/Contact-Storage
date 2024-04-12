@@ -10,6 +10,8 @@
          <children>
             <MenuButton fx:id="themeSelector" mnemonicParsing="false" text="Theme:">
               <items>
+                  <MenuItem fx:id="defaultLight" mnemonicParsing="false" onAction="#setDefaultLightTheme" text="Default Light" />
+                  <MenuItem fx:id="darkTheme" mnemonicParsing="false" onAction="#setDarkTheme" text="Dark" />
                 <MenuItem fx:id="aquaTheme" mnemonicParsing="false" onAction="#setAquaTheme" text="Aqua" />
                 <MenuItem fx:id="galaxyTheme" mnemonicParsing="false" onAction="#setGalaxyTheme" text="Galaxy" />
               </items>
