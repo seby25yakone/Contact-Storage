@@ -14,6 +14,7 @@
                   <MenuItem fx:id="darkTheme" mnemonicParsing="false" onAction="#setDarkTheme" text="Dark" />
                 <MenuItem fx:id="aquaTheme" mnemonicParsing="false" onAction="#setAquaTheme" text="Aqua" />
                 <MenuItem fx:id="galaxyTheme" mnemonicParsing="false" onAction="#setGalaxyTheme" text="Galaxy" />
+                  <MenuItem fx:id="deepOcean" mnemonicParsing="false" onAction="#setDeepOceanTheme" text="Deep Ocean" />
               </items>
                <VBox.margin>
                   <Insets bottom="100.0" left="10.0" top="-120.0" />

@@ -112,4 +112,9 @@ public class ContactListController implements Initializable {
         hBox.getStylesheets().add(getClass().getResource("/styles/DarkTheme.css").toExternalForm());
     }
 
+    public void setDeepOceanTheme(){
+        hBox.getStylesheets().clear();
+        hBox.getStylesheets().add(getClass().getResource("/styles/DeepOceanTheme.css").toExternalForm());
+    }
+
 }

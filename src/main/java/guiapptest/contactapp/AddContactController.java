@@ -65,4 +65,9 @@ public class AddContactController {
         vBox.getStylesheets().add(getClass().getResource("/styles/DarkTheme.css").toExternalForm());
     }
 
+    public void setDeepOceanTheme(){
+        vBox.getStylesheets().clear();
+        vBox.getStylesheets().add(getClass().getResource("/styles/DeepOceanTheme.css").toExternalForm());
+    }
+
 }

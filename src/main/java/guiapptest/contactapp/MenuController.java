@@ -5,10 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -34,6 +31,8 @@ public class MenuController implements Initializable {
     private MenuItem aquaTheme;
     @FXML
     private MenuItem galaxyTheme;
+    @FXML
+    private MenuItem deepOcean;
     private ContactRepository repository;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -114,7 +113,21 @@ public class MenuController implements Initializable {
         Parent root2 = addLoader.load();
         AddContactController addView = addLoader.getController();
         addView.setDarkTheme();
+    }
 
+    public void setDeepOceanTheme(ActionEvent event) throws IOException{
+        borderPane.getStylesheets().clear();
+        borderPane.getStylesheets().add(getClass().getResource("/styles/DeepOceanTheme.css").toExternalForm());
+        FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));
+        listLoader.setControllerFactory(controllerClass -> new ContactListController(repository));
+        Parent root1 = listLoader.load();
+        ContactListController listView = listLoader.getController();
+        listView.setDeepOceanTheme();
+        FXMLLoader addLoader = new FXMLLoader(getClass().getResource("addcontact.fxml"));
+        addLoader.setControllerFactory(controllerClass -> new AddContactController(repository));
+        Parent root2 = addLoader.load();
+        AddContactController addView = addLoader.getController();
+        addView.setDeepOceanTheme();
     }
 
 }

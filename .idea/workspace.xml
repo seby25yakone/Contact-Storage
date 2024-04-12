@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added light and dark themes">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="modified a few colors">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/DeepOceanTheme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/DarkTheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/DarkTheme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/GalaxyTheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/GalaxyTheme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +98,7 @@
       <workItem from="1712857933619" duration="42000" />
       <workItem from="1712858018099" duration="3000" />
       <workItem from="1712870117405" duration="1027000" />
-      <workItem from="1712905303269" duration="1237000" />
+      <workItem from="1712905303269" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -249,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712906199506</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="modified a few colors">
+      <option name="closed" value="true" />
+      <created>1712906589219</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712906589219</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +286,8 @@
     <MESSAGE value="fixed theme selection bug" />
     <MESSAGE value="fixed theme selection bug (fixed different methods)" />
     <MESSAGE value="added light and dark themes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added light and dark themes" />
+    <MESSAGE value="modified a few colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified a few colors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
