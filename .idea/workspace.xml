@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="modified a few colors">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/DeepOceanTheme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/AddContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MemoryContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MemoryContactRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4c12cb8a1dd1f3d2f5a6282644fc7b8353f1a146" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">

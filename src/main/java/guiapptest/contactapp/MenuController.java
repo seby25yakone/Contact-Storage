@@ -10,6 +10,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -36,7 +37,11 @@ public class MenuController implements Initializable {
     private ContactRepository repository;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        repository = new MemoryContactRepository();
+        try {
+            repository = new MemoryContactRepository();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
     public void openContactList(ActionEvent event) throws IOException {
         FXMLLoader listLoader = new FXMLLoader(getClass().getResource("contactlist.fxml"));

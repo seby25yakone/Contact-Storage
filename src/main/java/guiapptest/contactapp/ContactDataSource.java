@@ -3,15 +3,31 @@ package guiapptest.contactapp;
 import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ContactDataSource {
-    private static final String url = "jdbc:mysql://localhost:3306/contacts";
-    private static final String username = "admin";
-    private static final String password = "admin";
+    private static String url;
+    private static String username;
+    private static String password;
+    public ContactDataSource() throws FileNotFoundException {
+        File config = new File("src/main/resources/config.txt");
+        Scanner sc = new Scanner(config);
+        int i = 0;
+        String[] db = new String[3];
+        while(sc.hasNextLine()){
+            db[i] = sc.nextLine();
+            i++;
+        }
 
+        url = db[0].substring(db[0].indexOf('=')+1).trim();
+        username= db[1].substring(db[1].indexOf('=')+1).trim();
+        password= db[2].substring(db[2].indexOf('=')+1).trim();
+    }
     public static void save(Contact contact){
         String query = "INSERT INTO contacts VALUES(?,?,?)";
         try (
