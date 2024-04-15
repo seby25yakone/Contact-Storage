@@ -14,6 +14,7 @@ import javafx.scene.text.Text;
 import javafx.util.Callback;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -38,6 +39,10 @@ public class ContactListController implements Initializable {
     private Button deleteContact;
 
     private Contact currentContact;
+    @FXML
+    private TextField searchName;
+    @FXML
+    private Button searchButton;
 
     public ContactListController(){}
 
@@ -86,6 +91,18 @@ public class ContactListController implements Initializable {
                 alert.close();
             }
         }
+    }
+
+    public void searchContact(ActionEvent event){
+        contactListView.getItems().clear();
+        List<Contact> filteredContacts = new ArrayList<>();
+        List<Contact> contacts = contactRepository.getAllContacts();
+        for(Contact contact : contacts){
+            if(contact.getName().startsWith(searchName.getText()))
+                filteredContacts.add(contact);
+        }
+        contactListView.setItems(FXCollections.observableList(filteredContacts));
+        contactListView.refresh();
     }
 
     protected void addListContact(Contact c){
