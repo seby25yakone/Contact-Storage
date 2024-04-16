@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="made the app read the database login details from config file instead of straight from code">
+    <list default="true" id="4b6f26d8-ec06-427d-8407-a30a04f83536" name="Changes" comment="added contact list filtering option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactDataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/ContactRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MemoryContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/contactapp/MemoryContactRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/contactlist.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/contactapp/mainmenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,8 @@
       <workItem from="1712858018099" duration="3000" />
       <workItem from="1712870117405" duration="1027000" />
       <workItem from="1712905303269" duration="2467000" />
-      <workItem from="1713198038436" duration="1135000" />
+      <workItem from="1713198038436" duration="1440000" />
+      <workItem from="1713279172979" duration="1605000" />
     </task>
     <task id="LOCAL-00001" summary="created list scene, contact class">
       <option name="closed" value="true" />
@@ -272,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713197166137</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added contact list filtering option">
+      <option name="closed" value="true" />
+      <created>1713199336631</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713199336631</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +311,8 @@
     <MESSAGE value="added light and dark themes" />
     <MESSAGE value="modified a few colors" />
     <MESSAGE value="made the app read the database login details from config file instead of straight from code" />
-    <option name="LAST_COMMIT_MESSAGE" value="made the app read the database login details from config file instead of straight from code" />
+    <MESSAGE value="added contact list filtering option" />
+    <option name="LAST_COMMIT_MESSAGE" value="added contact list filtering option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

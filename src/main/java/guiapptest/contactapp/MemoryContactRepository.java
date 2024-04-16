@@ -27,4 +27,10 @@ public class MemoryContactRepository implements ContactRepository<Contact>{
         ContactDataSource.deleteContact(contact);
         contacts.remove(contact);
     }
+
+    public void editContact(Contact contact, String name, String phone, String email){
+        ContactDataSource.edit(contact, name, phone, email);
+        contacts = ContactDataSource.findAll();
+    }
+
 }

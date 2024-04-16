@@ -84,4 +84,24 @@ public class ContactDataSource {
         }
     }
 
+    public static void edit(Contact contact, String name, String phone, String email){
+        String query = "UPDATE contacts SET name=?, phone_number=?, email=? WHERE phone_number=?";
+        try (
+                Connection connection = DriverManager.getConnection(url, username, password);
+                PreparedStatement statement = connection.prepareStatement(query);
+        ) {
+            statement.setString(1, name);
+            statement.setString(2, phone);
+            statement.setString(3, email);
+            statement.setString(4,contact.getPhoneNumber());
+
+            statement.executeUpdate();
+            statement.close();
+            connection.close();
+        }
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }

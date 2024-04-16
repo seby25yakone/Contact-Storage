@@ -43,6 +43,9 @@ public class ContactListController implements Initializable {
     private TextField searchName;
     @FXML
     private Button searchButton;
+    @FXML
+    private Button editContact;
+    private boolean editMode = false;
 
     public ContactListController(){}
 
@@ -51,6 +54,7 @@ public class ContactListController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        editMode = false;
         List<Contact> contacts = contactRepository.getAllContacts();
         contactListView.setItems(FXCollections.observableList(contacts));
         contactListView.refresh();
@@ -107,6 +111,24 @@ public class ContactListController implements Initializable {
 
     protected void addListContact(Contact c){
         contactRepository.addContact(c);
+    }
+
+    public void editContactDetails(ActionEvent event){
+        editMode = !editMode;
+        if(editMode){
+            contactRepository.editContact(currentContact, nameTextField.getText(), phoneTextField.getText(), emailTextField.getText());
+            nameTextField.setEditable(false);
+            phoneTextField.setEditable(false);
+            emailTextField.setEditable(false);
+            contactListView.refresh();
+            editContact.setText("Edit contact");
+        }
+        else {
+            nameTextField.setEditable(true);
+            phoneTextField.setEditable(true);
+            emailTextField.setEditable(true);
+            editContact.setText("Save");
+        }
     }
 
     public void setAquaTheme(){

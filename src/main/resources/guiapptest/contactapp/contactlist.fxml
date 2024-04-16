@@ -30,6 +30,7 @@
                         <Insets />
                      </HBox.margin></Label>
                   <TextField fx:id="phoneTextField" alignment="CENTER" editable="false" />
+                  <Button fx:id="editContact" mnemonicParsing="false" onAction="#editContactDetails" prefHeight="26.0" prefWidth="83.0" text="Edit contact" />
                </children>
                <VBox.margin>
                   <Insets />
